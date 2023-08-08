@@ -1,0 +1,71 @@
+{
+  "name": "Tsuyu",
+  "version": "1.0.0",
+  "description": "Event bot for Anti-Social Society (https://discord.me/a-ss)",
+  "license": "MIT",
+  "author": "AkiraKokiri",
+  "scripts": {
+    "start": "node Tsuyu.js",
+    "update": "npm update",
+    "test": "eslint . silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkiraKokiri/Tsuyu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AkiraKokiri/Tsuyu/issues"
+  },
+  "dependencies": {
+    "Commando": "git+https://62c0826db15982c47a2efc3235e9f54d53586ee1:x-oauth-basic@github.com/AkiraKokiri/Commando.git",
+    "Sherlock": "neilgupta/Sherlock",
+    "bluebird": "^3.5.1",
+    "bufferutil": "^3.0.0",
+    "chalk": "^1.1.3",
+    "discord.js": "github:hydrabolt/discord.js#master",
+    "erlpack": "github:hammerandchisel/erlpack",
+    "escape-string-regexp": "^1.0.5",
+    "js-beautify": "^1.7.4",
+    "moment": "^2.19.1",
+    "moment-duration-format": "^1.3.0",
+    "pg": "^6.4.1",
+    "pg-hstore": "^2.3.2",
+    "raven": "^1.2.1",
+    "redis": "^2.7.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "sequelize": "^4.14.0",
+    "sherlockjs": "github:neilgupta/Sherlock",
+    "tsubaki": "^1.1.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-aqua": "^2.0.1"
+  },
+  "eslintConfig": {
+    "extends": "aqua",
+    "rules": {
+      "no-process-env": "off",
+      "max-len": "off",
+      "eol-last": "off",
+      "no-console": "off",
+      "new-cap": "off",
+      "no-inline-comments": "off",
+      "capitalized-comments": "off",
+      "max-depth": "warn",
+      "curly": "off",
+      "nonblock-statement-body-position": "off",
+      "indent": [
+        "error",
+        4
+      ],
+      "prefer-destructuring": [
+        "warn"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
